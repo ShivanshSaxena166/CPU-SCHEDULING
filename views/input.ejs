@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="style1.css"  >
+  </head>
+  <body>
+
+    <h1>MIXED CPU SCHEDULING</h1>
+    <form class="pop" action="\slit" method="post">
+
+      <table class="table table-hover">
+<thead class="thead-dark">
+  <tr>
+    <th>Process ID</th>
+    <th>Arrival Time</th>
+    <th>Burst Time</th>
+  </tr>
+</thead>
+
+
+      <%for(var h=0;h<n;h++){ %>
+        <tr class= <%=h+1 %>>
+
+<td>
+  <input type="number" name="bn" value="" class="inj"  ></td>
+
+<td><input type="number" name="st" value="" class="inj" ></td>
+
+
+    <td>  <input type="number" name="ct" value="" class="inj" ></td>
+
+
+
+        </tr>
+
+
+          <% } %>
+
+</table>
+
+
+      <button type="submit" name="button" class="btn btn-primary">Submit</button>
+    </form>
+  </body>
+</html>

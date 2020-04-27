@@ -1,0 +1,45 @@
+table, th, td {
+  border: 1px solid black;
+  margin: auto;
+  margin-top: 100px;
+
+}
+
+th{
+    padding: 2% 3%;
+}
+h2{
+
+  position: absolute;
+  left:530px;
+  top:450px;
+}
+.inj{
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+}
+.btn{
+position: relative;
+align-self: center;
+left: 750px;
+margin-top: 20px;
+}
+.pop{
+  height: 800px;
+
+}
+h1{
+
+  text-align: center;
+  align-self: center;
+  margin-top: 70px;
+}
+h3
+{
+  text-align: center;
+  align-self: center;
+  margin-top: 70px;
+
+}

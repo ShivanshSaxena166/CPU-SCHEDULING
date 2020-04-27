@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style2.css"  >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+  </head>
+  <body>
+  <h1>MIXED CPU SCHEDULING</h1>
+<table class="table table-hover">
+
+  <tr>
+    <thead class="thead-dark">
+      <th>Type of Scheduling</th>
+      <th>Total Waiting Time</th>
+      <th>Total Turnaround Time</th>
+      <th>Order of Process Completion</th>
+    </thead>
+
+  </tr>
+  <tr>
+    <td>FCFS</td>
+    <td><%=ttfc  %></td>
+    <td><%=tofc  %></td>
+    <td>   <% for(let hy=0;hy<n;hy++){  %>
+   <%= profc[hy] %>
+         <% } %></td>
+  </tr>
+  <tr>
+    <td>Shortest Job First</td>
+    <td> <%=tim  %></td>
+    <td><%=wtff  %></td>
+    <td>   <% for(let hy=0;hy<n;hy++){  %>
+   <%= pro[hy] %>
+         <% } %></td>
+  </tr>
+  <tr>
+    <td>Round Robin</td>
+    <td><%=ttrb  %></td>
+    <td><%=torb  %></td>
+    <td>   <% for(let hy=0;hy<n;hy++){  %>
+   <%= prorb[hy] %>
+         <% } %></td>
+  </tr>
+  <tr>
+    <td>Highest Response Ratio Next</td>
+    <td><%=tthrn  %></td>
+    <td><%=tohrn  %></td>
+    <td>   <% for(let hy=0;hy<n;hy++){  %>
+   <%= seq[hy] %>
+         <% } %></td>
+  </tr>
+</table>
+<h2>
+  <% for(let hy=0;hy<n;hy++){  %>
+<%= final[hy] %> 
+
+      <% }%>
+   is the most efficient solution</h2>
+
+
+
+  </body>
+</html>
